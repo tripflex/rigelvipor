@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 # This code is included in /hive/bin/custom function
+conf=" --algorithm $CUSTOM_ALGO --url stratum+tcp://pool.vipor.net:5084 --username $CUSTOM_TEMPLATE --api-bind 0.0.0.0:4000"
+[[ ! -z $CUSTOM_USER_CONFIG ]] && conf+=" $CUSTOM_USER_CONFIG"
 
-echo -e "--algorithm $CUSTOM_ALGO --url stratum+tcp://$CUSTOM_URL --username $CUSTOM_TEMPLATE $CUSTOM_USER_CONFIG" > $CUSTOM_CONFIG_FILENAME
+echo "$conf"
+echo "$conf" > $CUSTOM_CONFIG_FILENAME
