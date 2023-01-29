@@ -11,5 +11,7 @@ This is a custom miner for Hive OS that uses the Rigel miner, to integrate into 
 
 **NOTE:** This will only work on https://vipor.net
 
+![Select custom miner])
+
 ![Create a new flightsheet](hive_custom_miner.png)
 
